@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { useTranslation } from "@/lib/language-context";
 import { Play } from "lucide-react";
@@ -20,8 +21,17 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden -mt-20 pt-20">
-      {/* Dark background fallback */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
+      {/* Background image */}
+      <Image
+        src="/images/hero-bg.jpg"
+        alt="Professional meeting"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      {/* Dark tint overlay */}
+      <div className="absolute inset-0 bg-black/65" />
 
       {/* Grain texture overlay */}
       <div
