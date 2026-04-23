@@ -85,7 +85,7 @@ export function Hero() {
               <video
                 ref={videoRef}
                 className="w-full h-full object-cover"
-                poster=""
+                poster="/images/video-poster.jpg"
                 controls={playing}
                 playsInline
                 preload="metadata"
