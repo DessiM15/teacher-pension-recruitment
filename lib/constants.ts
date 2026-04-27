@@ -3,8 +3,10 @@ export const SITE_CONFIG = {
   description:
     "Join our team and help educators nationwide plan for a secure retirement. No experience required — we provide comprehensive training and direct access to clients.",
   url: "https://tpensions.com",
-  phone: "1-800-474-1440",
-  email: "careers@tpensions.com",
+  phone: "682.557.9603",
+  phoneLabel: "Contact Rigo C",
+  email: "robert@tpension.com",
+  address: "330 Morrison Park Dr. South Lake, 76092",
 } as const;
 
 export const NAV_LINKS = [

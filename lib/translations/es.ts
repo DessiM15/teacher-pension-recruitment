@@ -119,7 +119,9 @@ const es: Translations = {
   footer: {
     quickLinks: "Enlaces Rapidos",
     contactTitle: "Contacto",
-    officeLabel: "Oficina:",
+    officeLabel: "Contactar a Rigo C:",
+    emailLabel: "Correo:",
+    locationLabel: "Oficina South Lake:",
     copyright: "Todos los derechos reservados.",
     disclaimer:
       "Este sitio proporciona informacion general sobre oportunidades de carrera y no constituye una oferta de empleo.",

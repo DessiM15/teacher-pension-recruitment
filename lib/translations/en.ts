@@ -117,7 +117,9 @@ const en = {
   footer: {
     quickLinks: "Quick Links",
     contactTitle: "Contact",
-    officeLabel: "Office:",
+    officeLabel: "Contact Rigo C:",
+    emailLabel: "Email:",
+    locationLabel: "South Lake Office:",
     copyright: "All rights reserved.",
     disclaimer:
       "This site provides general information about career opportunities and does not constitute an offer of employment.",

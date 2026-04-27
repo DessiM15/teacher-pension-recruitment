@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { useTranslation } from "@/lib/language-context";
-import { Phone } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const NAV_KEYS = ["benefits", "howItWorks", "whyUs", "apply"] as const;
 
@@ -51,8 +51,20 @@ export function Footer() {
             </h3>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2.5 text-base text-background/80">
+                <Mail className="h-4 w-4 text-primary" />
+                <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-primary transition-colors">
+                  {t.footer.emailLabel} {SITE_CONFIG.email}
+                </a>
+              </div>
+              <div className="flex items-center gap-2.5 text-base text-background/80">
+                <MapPin className="h-4 w-4 text-primary" />
+                <span>{t.footer.locationLabel} {SITE_CONFIG.address}</span>
+              </div>
+              <div className="flex items-center gap-2.5 text-base text-background/80">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>{t.footer.officeLabel} {SITE_CONFIG.phone}</span>
+                <a href={`tel:${SITE_CONFIG.phone}`} className="hover:text-primary transition-colors">
+                  {t.footer.officeLabel} {SITE_CONFIG.phone}
+                </a>
               </div>
             </div>
           </div>
